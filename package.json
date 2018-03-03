@@ -1,0 +1,25 @@
+{
+  "name": "information-systems-of-12-rdms",
+  "version": "1.0.0",
+  "description": "react data management service",
+  "main": "./functions/main.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/information-systems-of-12/rdms.git"
+  },
+  "keywords": [
+    "react",
+    "routing",
+    "service"
+  ],
+  "author": "Artem Gruden",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/information-systems-of-12/rdms#readme",
+  "dependencies": {
+    "react": "^16.4.0-alpha.0911da3"
+  }
+
+}
