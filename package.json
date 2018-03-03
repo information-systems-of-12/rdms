@@ -1,5 +1,5 @@
 {
-  "name": "information-systems-of-12-rdms",
+  "name": "iso12-rdms",
   "version": "0.0.1-security",
   "description": "react data management service",
   "main": "./functions/main.mjs",
