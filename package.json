@@ -1,6 +1,6 @@
 {
   "name": "information-systems-of-12-rdms",
-  "version": "information-systems-of-12-rrs",
+  "version": "0.0.1-security",
   "description": "react data management service",
   "main": "./functions/main.mjs",
   "scripts": {
