@@ -19,9 +19,7 @@ export default class Updater extends Component {
     }
     return o
   }
-  componentDidUpdate(){
-  }
   render(){
-    return createElement( this.props.children, { ...this.state, defaultDataStateKeyValues: this.props.defaultDataStateKeyValues, set: this.props.set } )
+    return createElement( this.props.children, { ...this.state, ...this.props } )
   }
 }

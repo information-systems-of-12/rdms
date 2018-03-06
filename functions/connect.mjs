@@ -17,7 +17,7 @@ export default dataStateKeyNames => Container => {
       return createElement( dataStateContext.Consumer, {},
         dataState => createElement( defaultDataStateKeyValuesContext.Consumer, {},
           defaultDataStateKeyValues => createElement( setContext.Consumer, {},
-            set => createElement( Updater, { subscribeTo: dataStateKeyNames, dataState, defaultDataStateKeyValues, set }, Container )
+            set => createElement( Updater, { subscribeTo: dataStateKeyNames, dataState, defaultDataStateKeyValues, set, ...this.props }, Container )
           )
         )
       )
