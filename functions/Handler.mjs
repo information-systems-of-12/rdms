@@ -20,8 +20,16 @@ export default class Handler extends Component {
     )
   }
 
-  set( obj ){
-    this.setState( obj )
+  setStateWrapper( obj ){
+    return new Promise( resolve => {
+      this.setState( obj, () => {
+        return resolve( this.state )
+      } )
+    } )
+  }
+
+  async set( obj ){
+    await this.setStateWrapper( obj )
     this.props.dataStateStorage.setDataState( this.state )
   }
 
