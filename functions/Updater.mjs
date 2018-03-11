@@ -20,6 +20,7 @@ export default class Updater extends Component {
     return o
   }
   render(){
-    return createElement( this.props.children, { ...this.state, ...this.props } )
+    // debugger
+    return createElement( this.props.children, { ...this.state, ...this.props }, this.props.children2 )
   }
 }
