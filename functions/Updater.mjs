@@ -20,7 +20,6 @@ export default class Updater extends Component {
     return o
   }
   render(){
-    // debugger
-    return createElement( this.props.children, { ...this.state, ...this.props }, this.props.children2 )
+    return createElement( this.props.children, { ...this.state, set: this.props.set, defaultDataStateKeyValues: this.props.defaultDataStateKeyValues, ...this.props.containerProps }, this.props.containerChildren )
   }
 }

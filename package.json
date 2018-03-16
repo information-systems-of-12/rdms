@@ -1,6 +1,6 @@
 {
   "name": "iso12-rdms",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "react data management service",
   "main": "./functions/main.mjs",
   "scripts": {
