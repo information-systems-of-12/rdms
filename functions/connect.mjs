@@ -17,10 +17,10 @@ export default dataStateKeyNames => Container => {
     //   debugger
     //   return {}
     // }
-    shouldComponentUpdate(nextProps, nextState){
-      // debugger
-      return false
-    }
+    // shouldComponentUpdate(nextProps, nextState){
+    //   // debugger
+    //   return false
+    // }
 
     render(){
       // debugger
