@@ -1,6 +1,6 @@
 {
   "name": "iso12-rdms",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "react data management service",
   "main": "./functions/main.mjs",
   "scripts": {
@@ -19,6 +19,6 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/information-systems-of-12/rdms#readme",
   "dependencies": {
-    "react": "^16.4.0-alpha.0911da3"
+    "react": "^16.3.0-alpha.3"
   }
 }
