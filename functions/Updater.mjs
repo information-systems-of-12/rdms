@@ -11,6 +11,7 @@ export default class Updater extends Component {
     this.update = this.update.bind( this )
   }
 
+  
   static getDerivedStateFromProps( nextProps, prevState ){
     const o = {}
     const dataState = nextProps.dataStateStorage.getDataState()
