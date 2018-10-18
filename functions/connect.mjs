@@ -4,6 +4,7 @@ const createElement = React.default.createElement
 import { dataStateStorageContext } from './contexts.mjs'
 import Updater from './Updater.mjs'
 
+
 /**
 @param { array of strings } dataStateKeyNames
 @param { react component } Container
@@ -30,6 +31,13 @@ export default dataStateKeyNames => Container => {
 
   }
   
+  const propertyNames = Object.getOwnPropertyNames( Container )
+
+  for ( const propertyName of propertyNames ){
+    if ( propertyName !== 'length' && propertyName !== 'prototype' && propertyName !== 'name' ){
+      Linker[ propertyName ] = Container[ propertyName ]
+    }
+  }
 
   for ( const key of Object.keys( Container ) ){
     Linker[ key ] = Container[ key ]
