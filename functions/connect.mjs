@@ -4,7 +4,6 @@ const createElement = React.default.createElement
 import { dataStateStorageContext } from './contexts.mjs'
 import Updater from './Updater.mjs'
 
-
 /**
 @param { array of strings } dataStateKeyNames
 @param { react component } Container
@@ -12,7 +11,7 @@ import Updater from './Updater.mjs'
 export default dataStateKeyNames => Container => {
 
   class Linker extends Component {
-    
+
     constructor( props ){
       super( props )
     }
@@ -21,11 +20,13 @@ export default dataStateKeyNames => Container => {
       return createElement( dataStateStorageContext.Consumer, {},
         dataStateStorage => {
           return createElement( Updater, { 
-          dataStateKeyNames,
-          dataStateStorage,
-          containerProps: this.props,
-          containerChildren: this.props.children
-        }, Container )
+              dataStateKeyNames,
+              dataStateStorage,
+              containerProps: this.props,
+              containerChildren: this.props.children
+            },
+            Container
+          )
       } )
     }
 
@@ -34,7 +35,7 @@ export default dataStateKeyNames => Container => {
   const propertyNames = Object.getOwnPropertyNames( Container )
 
   for ( const propertyName of propertyNames ){
-    if ( propertyName !== 'length' && propertyName !== 'prototype' && propertyName !== 'name' ){
+    if ( propertyName !== 'length' && propertyName !== 'prototype' && propertyName !== 'name' && propertyName !== 'getDerivedStateFromProps' ){
       Linker[ propertyName ] = Container[ propertyName ]
     }
   }
