@@ -1,14 +1,14 @@
 {
   "name": "iso12-rdms",
-  "version": "1.0.15",
+  "version": "1.1.0-alpha.1",
   "description": "react data management service",
-  "main": "./functions/main.mjs",
+  "main": "./common_unbundled_modules/main.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:information-systems-of-12/rdms.git"
+    "url": "git+ssh://git@github.com:information-systems-of-12/rdms.gitmaster-1.1"
   },
   "keywords": [
     "react",
@@ -19,6 +19,6 @@
   "license": "ISC",
   "homepage": "https://github.com/information-systems-of-12/rdms#readme",
   "dependencies": {
-    "react": "^16.3.0"
+    "react": "^16.8.0"
   }
 }
